@@ -12,6 +12,8 @@ body{
 
     
 .header{
+       position: fixed;
+       width:100 wh;
        padding: 20px;
        display: flex;
        size: 100%;
@@ -68,13 +70,47 @@ body{
       width: 50%;
       padding:50px;
  }
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ 
+.buttonfb{
+    
+  cursor: pointer;
+  height: 50px;
+  width: 70px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: rgb(167, 73, 73);
+  margin: 5px;
+  transition: 1s;
 }
+.buttonln
+{
+    
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: rgb(167, 73, 73);
+    margin: 5px;
+    transition: 1s;}
+.buttongh{
+    
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: rgb(167, 73, 73);
+    margin: 5px;
+    transition: 1s;
 
 
-}
+
 
 
