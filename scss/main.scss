@@ -22,13 +22,85 @@ background-color:$background-color-light;
      padding: 10px 65px 10px 30px;
 
  } 
- #menuToggle input{
-     display: none;
- }
+
  #menu{
      display: flex;
      align-items: center;
  }
+
+
+
+
+
+
+
+
+ #menuToggle {
+       width: 40px;
+  height: 32px;
+     display: none;
+  position: relative;
+
+  z-index: 1;
+  
+  user-select: none;
+ }
+
+ #menuToggle input {
+//   display: block;
+position: absolute;
+//   top: -0;
+//   left: 0;
+    top: -7px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+//   position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+}
+
+
+#mobile-menu
+{
+  position: absolute;
+  width: 300px;
+  height: 0;
+//   margin: -100px 0 0 -50px;
+//   padding: 50px;
+//   padding-top: 125px;
+  display: none;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+//   transform-origin: 0% 0%;
+//   transform: translate(-100%, 0);
+  }
+
+
+#menuToggle input:checked ~ ul
+{
+  display: block;
+}
+
+
+
+
  a{
      text-decoration: none;
  }
@@ -71,39 +143,17 @@ background-color:$background-color-light;
     font-weight: 700;
     transition: 1s;
 }
-@media(max-width:690px){
-    header{
-        height: 57px;
-        width: 100%;
-        padding:0px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-end;
 
+@media(max-width:690px) {
+    nav {
+        display: none;
     }
-#menu{
-    position: relative;
-    top:137px;
-    left:0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100vw;
 
-}
-#menu a{
-    height: 57px;
-
-}
-#menu bottom {
-    height: 57px;
-    width: 100%;
-    background-color: $icon-header-color;
-
+    #menuToggle {
+     display: block;
+    }
 }
 
-}
 
     
 
