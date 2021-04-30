@@ -3,51 +3,120 @@
 
 body{
 margin: 0px;
+width: 100vw;
+height: 10000px;
+background-color:$background-color-light;
 }
-header{
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    background-color:$header-color;
-    width: 100vw;
-    height: 66px;
-    padding: 10px 65px 10px 0px;
-    justify-content: flex-end;
 
+ header{
+     position:fixed;
+     top:0px;
+     left: 0px;
+     display: flex;
+     align-items:center ;
+     justify-content: flex-end;
+     width:100vw;
+     height: 66px;
+     box-sizing: border-box;
+     background-color:$header-color;
+     padding: 10px 65px 10px 30px;
 
-}
-header a{
-    color:$icon-header-color;
-    font-family:$primaryFont;
-    font-weight:700;
-    font-size: 17px;
-    padding: 13px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-header button{
-    background-color: $icon-header-color;
-    font-family: $primaryFont;
-    font-weight: 700;
-    color: $background-color-dark;
-    border: 4px solid $icon-header-color;
-    border-radius: 30px;
-    height: 46px;
-    font-size: 15px;
-    padding:0px 20px;
-    margin-left:33px;
-}
-header button:hover{
-    background-color: $header-color;
-    font-family: $primaryFont;
-    font-weight: 700;
+ } 
+ #menuToggle input{
+     display: none;
+ }
+ #menu{
+     display: flex;
+     align-items: center;
+ }
+ a{
+     text-decoration: none;
+ }
+#menu a li{
+    text-decoration: none;
     color: $icon-header-color;
-    border: 4px solid $icon-header-color;
-    border-radius: 30px;
-    height: 46px;
+    margin-left: 33px;
+    list-style-type: none;
+    font-family: $primaryFont;
+    font-weight: 700;
+
+
+}
+#menu button{
+    margin-left: 33px;
     font-size: 15px;
-    padding:0px 20px;
-    margin-left:33px;
-    cursor: pointer;
+    color: $header-color;
+    background-color: $icon-header-color;
+    height: 46px;
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px;
+    list-style-type: none;
+    font-family: $primaryFont;
+    font-weight: 700;
+}
+#menu button:hover{
+    margin-left: 33px;
+    font-size: 15px;
+    color: $icon-header-color;
+    background-color: $header-color;
+    height: 46px;
+    border: 4px solid $icon-header-color;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px;
+    list-style-type: none;
+    font-family: $primaryFont;
+    font-weight: 700;
     transition: 1s;
 }
+@media(max-width:690px){
+    header{
+        height: 57px;
+        width: 100%;
+        padding:0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+#menu{
+    position: relative;
+    top:137px;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+
+}
+#menu a{
+    height: 57px;
+
+}
+#menu bottom {
+    height: 57px;
+    width: 100%;
+    background-color: $icon-header-color;
+
+}
+
+}
+
+    
+
+
+    
+
+
+
+
+
+        
+        
+        
+        
+
+    

@@ -1,50 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&family=Raleway:wght@700;800&display=swap");
 body {
-  margin: 0px; }
+  margin: 0px;
+  width: 100vw;
+  height: 10000px;
+  background-color: #d7d7d7; }
 
 header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  background-color: #0b0b0b;
+  justify-content: flex-end;
   width: 100vw;
   height: 66px;
-  padding: 10px 65px 10px 0px;
-  justify-content: flex-end; }
-
-header a {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  padding: 13px;
-  margin-left: 10px;
-  cursor: pointer; }
-
-header button {
-  background-color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: black;
-  border: 4px solid white;
-  border-radius: 30px;
-  height: 46px;
-  font-size: 15px;
-  padding: 0px 20px;
-  margin-left: 33px; }
-
-header button:hover {
+  box-sizing: border-box;
   background-color: #0b0b0b;
+  padding: 10px 65px 10px 30px; }
+
+#menuToggle input {
+  display: none; }
+
+#menu {
+  display: flex;
+  align-items: center; }
+
+a {
+  text-decoration: none; }
+
+#menu a li {
+  text-decoration: none;
+  color: white;
+  margin-left: 33px;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
+
+#menu button {
+  margin-left: 33px;
+  font-size: 15px;
+  color: #0b0b0b;
+  background-color: white;
+  height: 46px;
+  border: 4px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 0px 20px 0px 20px;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
+
+#menu button:hover {
+  margin-left: 33px;
+  font-size: 15px;
+  color: white;
+  background-color: #0b0b0b;
+  height: 46px;
+  border: 4px solid white;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 0px 20px 0px 20px;
+  list-style-type: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: white;
-  border: 4px solid white;
-  border-radius: 30px;
-  height: 46px;
-  font-size: 15px;
-  padding: 0px 20px;
-  margin-left: 33px;
-  cursor: pointer;
   transition: 1s; }
+
+@media (max-width: 690px) {
+  header {
+    height: 57px;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end; }
+
+  #menu {
+    position: relative;
+    top: 137px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw; }
+
+  #menu a {
+    height: 57px; }
+
+  #menu bottom {
+    height: 57px;
+    width: 100%;
+    background-color: white; } }
 
 /*# sourceMappingURL=main.css.map */
