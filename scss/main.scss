@@ -19,7 +19,9 @@ background-color:$background-color-light;
      height: 66px;
      box-sizing: border-box;
      background-color:$header-color;
-     padding: 10px 65px 10px 30px;
+     padding: 10px 65px 10px 65px;
+     z-index: 2;
+
 
  } 
 
@@ -77,7 +79,7 @@ position: absolute;
 #mobile-menu
 {
   position: absolute;
-  width: 300px;
+  width: 100vw;
   height: 0;
 //   margin: -100px 0 0 -50px;
 //   padding: 50px;
@@ -144,6 +146,77 @@ position: absolute;
     transition: 1s;
 }
 
+.intodaction-page{
+  display: flex;
+  width: 100vw;
+  height:calc(100vh - 66px);
+
+ }
+ .intodaction-page-text{
+   box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   padding-left: 10%;
+   margin-top:18%;
+ }
+ .intodaction-page-photo{
+   box-sizing: border-box;
+   margin-top:66px ;
+   width: 100%;
+   height:calc(100vh - 66px);
+   background-color: $header-color;
+   clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+ 
+ .intodaction-page-photo img{
+
+  border-radius: 50%;
+  margin-left: 24%;
+  //  height: 65%;
+  //  width: 65%;
+   margin-top: 15%;
+  
+ }
+ .intodaction-page-text h2{
+   font-family: $additionalFont;
+   font-weight: 700;
+   font-size: 40px;
+ }
+ .intodaction-page-text h1{
+   font-family: $additionalFont;
+   font-size: 58px;
+   font-weight: bold;
+
+ }
+.intodaction-page-text span{
+  font-family: $additionalFont;
+  font-weight: 800;
+  font-size: 25px;
+  color:$text-color;
+}
+.social-network-but{
+  display: flex;
+  align-items: center;
+  padding-top: 126px;
+  
+
+}
+.social-network-but button{
+  height: 56px;
+  width: 61px;
+  background-color: #C4C4C4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 31px;
+  border:none;
+
+}
+
+
+  
+
+
 @media(max-width:690px) {
     nav {
         display: none;
@@ -152,6 +225,7 @@ position: absolute;
     #menuToggle {
      display: block;
     }
+  
 }
 
 
