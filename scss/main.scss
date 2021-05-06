@@ -1,6 +1,6 @@
 @import "./base/core";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&family=Raleway:wght@700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
 body{
 margin: 0px;
 width: 100vw;
@@ -29,6 +29,9 @@ background-color:$background-color-light;
      display: flex;
      align-items: center;
  }
+ a{
+   text-decoration: none;
+ }
 
 
 
@@ -38,7 +41,9 @@ background-color:$background-color-light;
 
 
  #menuToggle {
-       width: 40px;
+      //  display: flex;
+       width: 100vw;
+
   height: 32px;
      display: none;
   position: relative;
@@ -64,11 +69,14 @@ position: absolute;
 
 #menuToggle span
 {
-  display: block;
-  width: 100%;
+  display:block;
+ 
+
+  width: 40px;
   height: 5px;
   margin-bottom: 5px;
-//   position: relative;
+  // position: fixed;
+  // right: 10px;
   background: #cdcdcd;
   border-radius: 3px;
   z-index: 1;
@@ -80,12 +88,15 @@ position: absolute;
 {
   position: absolute;
   width: 100vw;
-  height: 0;
+  height: 228px;
 //   margin: -100px 0 0 -50px;
 //   padding: 50px;
 //   padding-top: 125px;
   display: none;
-  background: #ededed;
+  box-sizing: border-box;
+  // padding: 0px;
+  // margin: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -97,14 +108,41 @@ position: absolute;
 
 #menuToggle input:checked ~ ul
 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  top: 33px;
+  left: -31px;
+  padding: 0px;
+  position: absolute;
+
 }
+#mobile-menu a{
+  font-family:$primaryFont;
+  font-size: 15px;
+  font-weight: 600;
+  color: $icon-header-color;
 
-
-
-
- a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
      text-decoration: none;
+     height: 57px;
+     width: 100%;
+ }
+ 
+ #mobile-menu button{
+   width: 100vw;
+   height: 57px;
+   background-color: $icon-header-color;
+   padding-right: 10px;
+   color:$background-color-dark;
+   font-family: $primaryFont;
+   font-size: 15px;
+   border:none;
+
  }
 #menu a li{
     text-decoration: none;
@@ -150,6 +188,7 @@ position: absolute;
   display: flex;
   width: 100vw;
   height:calc(100vh - 66px);
+  margin-top: $header-height;
 
  }
  .intodaction-page-text{
@@ -157,11 +196,11 @@ position: absolute;
    width: 100%;
    height: 100%;
    padding-left: 10%;
-   margin-top:18%;
+   padding-top:10%;
  }
  .intodaction-page-photo{
    box-sizing: border-box;
-   margin-top:66px ;
+   
    width: 100%;
    height:calc(100vh - 66px);
    background-color: $header-color;
@@ -173,10 +212,10 @@ position: absolute;
  .intodaction-page-photo img{
 
   border-radius: 50%;
-  margin-left: 24%;
-  //  height: 65%;
-  //  width: 65%;
-   margin-top: 15%;
+    margin-left: 26%;
+    height: 83%;
+    width: 53%;
+    padding-top: 11%;
   
  }
  .intodaction-page-text h2{
@@ -212,21 +251,110 @@ position: absolute;
   border:none;
 
 }
+.mobile-version-text{
+  display: none;
+}
+@media(max-width:1200px){
+  .intodaction-page-photo img{
+
+    border-radius: 50%;
+    margin-left: 26%;
+    height: 76%;
+    width: 59%;
+    padding-top: 11%;}
+
+
+}
+@media(max-width:1200px){
+  .intodaction-page-photo img{
+
+    border-radius: 50%;
+    margin-left: 26%;
+    height: 69%;
+    width: 59%;
+    padding-top: 17%}
+
+  
+}
+@media(max-width:1038px){
+  .intodaction-page-photo{
+
+   display:none;}
+  
+
+}
+
 
 
   
 
 
 @media(max-width:690px) {
+  header{
+    padding:15px 25px 15px 25px;
+    box-sizing: border-box;
+  }
     nav {
         display: none;
     }
 
     #menuToggle {
      display: block;
+     width: 100vw;
     }
+    .intodaction-page-text{
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/background-img.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding:0px;
   
-}
+    }
+    .mobile-version-text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+   .mobile-version-text p{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color:$icon-header-color;
+    margin-bottom:0px;
+
+   } 
+   .mobile-version-text h2{
+     font-size: 32px;
+     font-family:$primaryFont;
+     font-weight: 600;
+     color: $icon-header-color;
+     margin-top: 0px;
+   }
+  .large-screan-version-text{
+    display: none;
+  }
+  .social-network-but button{
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0px;
+
+
+  }
+  .social-network-but{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;}
+  
+ }
+  
+
 
 
     
