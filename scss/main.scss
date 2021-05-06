@@ -41,11 +41,12 @@ background-color:$background-color-light;
 
 
  #menuToggle {
-      //  display: flex;
-       width: 100vw;
+
+
+  width: 100vw;
 
   height: 32px;
-     display: none;
+  display: none;
   position: relative;
 
   z-index: 1;
@@ -54,10 +55,9 @@ background-color:$background-color-light;
  }
 
  #menuToggle input {
-//   display: block;
+
 position: absolute;
-//   top: -0;
-//   left: 0;
+
     top: -7px;
   left: -5px;
   width: 100%;
@@ -254,6 +254,23 @@ position: absolute;
 .mobile-version-text{
   display: none;
 }
+
+.description{
+  padding: 10px;
+  box-sizing: border-box;
+  height: max-content;
+  width: 100vw;
+  background:linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+}
+.description h1{
+  margin: 0px;
+  color:$icon-header-color;
+  font-family:$primaryFont;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 54px 102px 30px 102px;
+
+}
 @media(max-width:1200px){
   .intodaction-page-photo img{
 
@@ -270,8 +287,8 @@ position: absolute;
 
     border-radius: 50%;
     margin-left: 26%;
-    height: 69%;
-    width: 59%;
+    height: 543px;
+    width: 342px;
     padding-top: 17%}
 
   
@@ -353,7 +370,48 @@ position: absolute;
     padding-top: 0px;}
   
  }
+ .about-me{
+   box-sizing: border-box;
+   width: 100vw;
+   height: max-content;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .icon-about-me {
+   
+   justify-content: center;
+   
+  max-width: 404px;
+  height: 107px;
+   box-sizing: border-box;
+   border: 8px solid black;
+   margin-top: 142px;
+ }
+ .icon-about-me h1{
+   padding: 27px 58px;
+   margin: 0px;
+   font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 38px;
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.35538em;
+ }
+ .using-now-icons{
+   display: flex;
+
+  //  margin-left: 100px;
+ }
+.using-now-icon{
+  margin-left: 100px;
   
+
+} 
 
 
 

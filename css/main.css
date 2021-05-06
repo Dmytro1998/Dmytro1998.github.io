@@ -197,6 +197,21 @@ a {
 .mobile-version-text {
   display: none; }
 
+.description {
+  padding: 10px;
+  box-sizing: border-box;
+  height: max-content;
+  width: 100vw;
+  background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%); }
+
+.description h1 {
+  margin: 0px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 54px 102px 30px 102px; }
+
 @media (max-width: 1200px) {
   .intodaction-page-photo img {
     border-radius: 50%;
@@ -208,8 +223,8 @@ a {
   .intodaction-page-photo img {
     border-radius: 50%;
     margin-left: 26%;
-    height: 69%;
-    width: 59%;
+    height: 543px;
+    width: 342px;
     padding-top: 17%; } }
 @media (max-width: 1038px) {
   .intodaction-page-photo {
@@ -271,5 +286,39 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 0px; } }
+.about-me {
+  box-sizing: border-box;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.icon-about-me {
+  justify-content: center;
+  max-width: 404px;
+  height: 107px;
+  box-sizing: border-box;
+  border: 8px solid black;
+  margin-top: 142px; }
+
+.icon-about-me h1 {
+  padding: 27px 58px;
+  margin: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.35538em; }
+
+.using-now-icons {
+  display: flex; }
+
+.using-now-icon {
+  margin-left: 100px; }
 
 /*# sourceMappingURL=main.css.map */
