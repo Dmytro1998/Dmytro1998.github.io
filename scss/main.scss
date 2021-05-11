@@ -387,36 +387,108 @@ position: absolute;
   height: 107px;
    box-sizing: border-box;
    border: 8px solid black;
-   margin-top: 142px;
+   margin-top: 120px;
  }
  .icon-about-me h1{
    padding: 27px 58px;
    margin: 0px;
-   font-family: Montserrat;
+   font-family: $primaryFont;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
-line-height: 38px;
+
 
 align-items: center;
 text-align: center;
-letter-spacing: 0.35538em;
+
  }
  .using-now-icons{
    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin: 60px 92px ;
 
   //  margin-left: 100px;
  }
 .using-now-icon{
-  margin-left: 100px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   
 
 } 
+.using-now-icon p{
+  align-items: center;
+  justify-content: center;
+  font-family: $primaryFont;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 36px;
 
 
+}
+@media(max-width:375px){
+  .using-now-icon{
+    margin: 0px;
+    padding:0px auto;
+    width: 95%;
+  }
+}
 
-    
+.header-for-different-icons{
+  font-family:$primaryFont;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 79px;
+ 
+}
+.using-now-icon img{
+  height: 100px;
+}
+.other-skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 92px;
+  flex-wrap: wrap;
+}
 
+ .portfolio-image-background{
+   height: 321px;
+   width: 100vw;
+   background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+ }  
+ form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ } 
+input{
+  height:48px;
+  background-color: transparent;
+  width:609px;
+  border-left: solid 5px $header-color;
+  border-bottom:  solid 5px $header-color;
+  border-right: none;
+  border-top: none;
+  margin-top: 53px;
+  font-family:$primaryFont ;
+  font-size: 14px;
+
+}
+input  {
+
+}
 
     
 
